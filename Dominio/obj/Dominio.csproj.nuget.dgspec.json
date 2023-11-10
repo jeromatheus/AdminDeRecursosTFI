@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj": {}
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\pribe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pribe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BVpbX3ySH08ZkUUDQXECNbx4W8C3Pq6Ietw8AUhoq1DJQbkDuQZ9udle5Cf5VJxTIqKMlBdfQ8alJTycs0B4+w==",
+  "dgSpecHash": "wZkw39booZRaJEHSEZXCt/xUutv0pvVok2mwfOhN5uYLo4E5OT6zZwOFOPkUFHA8BS5jr+fUImRevoAKWr3xXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

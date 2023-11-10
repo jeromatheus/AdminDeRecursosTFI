@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\Vista.csproj": {}
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\Vista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj": {
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\obj\\",
+        "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\pribe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pribe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj"
+              "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -75,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\pribe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pribe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj",
-        "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\obj\\",
+        "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Negocio\\Negocio.csproj",
+        "packagesPath": "C:\\Users\\pribe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pribe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,8 +158,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj"
+              "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Datos\\Datos.csproj"
               }
             }
           }
@@ -189,21 +189,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\Vista.csproj": {
+    "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\Vista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\Vista.csproj",
+        "projectUniqueName": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\Vista.csproj",
         "projectName": "Vista",
-        "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\Vista.csproj",
-        "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\obj\\",
+        "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\Vista.csproj",
+        "packagesPath": "C:\\Users\\pribe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pribe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -211,18 +211,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Dominio\\Dominio.csproj"
+              "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj": {
-                "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj"
+              "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -255,7 +254,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
