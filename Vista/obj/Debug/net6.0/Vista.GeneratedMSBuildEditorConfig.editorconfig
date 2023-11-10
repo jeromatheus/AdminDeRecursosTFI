@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\jerom\Desktop\PROGRAMACIÓN\puntoNET\Platzi\ArquitecturaDistribuida\AdministracionDeRecursosTFI\Vista
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Administrativo/CrearEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cQ3JlYXJFbXBsZWFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Administrativo/GestionarEmpleados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cR2VzdGlvbmFyRW1wbGVhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

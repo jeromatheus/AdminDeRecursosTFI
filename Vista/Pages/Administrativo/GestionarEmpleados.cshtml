@@ -1,0 +1,55 @@
+﻿@page
+@model Vista.Pages.Administrativo.GestionarEmpleadosModel
+@{
+}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<div class="col-12">
+    <div class="col-4 mt-3 mx-auto">
+        <input type="text" id="myInput" onkeyup="filtroDinamico()" placeholder="Buscar empleado por apellido" style="width:80%">
+        <button class="btn-light" inert><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="col-3">
+        <a class="btn btn-success" href="/Administrativo/CrearEmpleado"><i class="fa fa-plus"></i>  Agregar nuevo empleado</a>
+    </div>
+
+    <div class="col-12 mt-3 mx-auto">
+        <table class="table table-bordered" id="tablaEmpleados">
+            <thead>
+                <tr>
+                    <th scope="col">Legajo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Remuneración</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="myTBody">
+                @foreach (var emp in Model.Empleados)
+                {
+                    <tr onclick="obtenereEmpleadoSeleccionado(this)">
+                        <td>@emp.Legajo</td>
+                        <td>@emp.Nombre</td>
+                        <td>@emp.Apellido</td>
+                        <td>$xxxx</td>
+                        <td>xxxx</td>
+                        <td colspan="4">
+                            <form asp-page-handler="delete">
+                                <input hidden readonly asp-for="@Model.LegajoSeleccionado" id="legajoSeleccionado" type="number" />
+                                <button class="btn btn-danger" id="btnBorrar" onclick="return confirm('¿Está seguro que desea eliminar?')">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>                    
+                }
+            </tbody>
+        </table>
+        <h1 id="legajoSeleccionado" type="number" />
+    </div>
+</div>
+
+
+<script src="~/js/site.js"></script>

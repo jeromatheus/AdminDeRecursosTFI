@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 //Inycciones de dependencia
 builder.Services.AddScoped<ISesionService, SesionService>();
+builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
 
 builder.Services.AddAuthentication("MiCookieDeAutenticacion").AddCookie("MiCookieDeAutenticacion", options =>
 {

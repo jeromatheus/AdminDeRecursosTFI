@@ -11,8 +11,4 @@
     <ProjectReference Include="..\Negocio\Negocio.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Administrativo\" />
-  </ItemGroup>
-
 </Project>
