@@ -3,8 +3,19 @@
     "",
     "\\Datos",
     "\\Negocio",
+<<<<<<< HEAD
     "\\Vista"
   ],
   "SelectedNode": "\\Vista\\Pages",
+=======
+    "\\Negocio\\Contratos",
+    "\\Negocio\\Servicios",
+    "\\Vista",
+    "\\Vista\\Pages",
+    "\\Vista\\Pages\\Administrativo",
+    "\\Vista\\Pages\\LiderDeProyecto"
+  ],
+  "SelectedNode": "\\Datos\\DatosContexto.cs",
+>>>>>>> 9c5427d ( se guardan cambios)
   "PreviewInSolutionExplorer": false
 }

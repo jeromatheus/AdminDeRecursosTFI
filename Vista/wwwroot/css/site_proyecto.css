@@ -1,0 +1,33 @@
+﻿body {
+    background-color: #E7E7E7;
+}
+.title{
+    text-align: center !important; 
+}
+.containerBtn{
+    display: flex; 
+    justify-content: space-around; 
+}
+.btnAgregarEmpleado {
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    color: white; 
+}
+.btnLimpiar {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.row{
+    padding-bottom: 10px; 
+}
+
+ tr td ,th {
+    border: 10px black; 
+}
+ table{
+     background-color: white; 
+ }

@@ -1,10 +1,17 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "jMiyxT359nkmvL/H4JnUv5B9+I6v+pV3i5PoYx3W2BQ=",
 =======
   "Hash": "3uGshnvhmie+W2nDULK9sc96GNJ8bdHxUVsXzFQ/Rus=",
 >>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
+=======
+  "Hash": "3uGshnvhmie+W2nDULK9sc96GNJ8bdHxUVsXzFQ/Rus=",
+=======
+  "Hash": "aTZPqbfnP2euIReZefP35+CEkJaKdEFFWCCk0lyEmys=",
+>>>>>>> 761c37a (se agrega vista de gestionar proyectos)
+>>>>>>> 9c5427d ( se guardan cambios)
   "Source": "Vista",
   "BasePath": "_content/Vista",
   "Mode": "Default",
@@ -73,17 +80,27 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\favicon.ico",
       "SourceId": "Vista",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
 =======
+=======
+>>>>>>> 9c5427d ( se guardan cambios)
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\css\\site_proyectos.css",
+=======
+      "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\css\\site_proyecto.css",
+>>>>>>> 761c37a (se agrega vista de gestionar proyectos)
       "SourceId": "Vista",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
       "BasePath": "_content/Vista",
+<<<<<<< HEAD
       "RelativePath": "css/site_proyectos.css",
+=======
+      "RelativePath": "css/site_proyecto.css",
+>>>>>>> 761c37a (se agrega vista de gestionar proyectos)
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -92,7 +109,11 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\css\\site_proyectos.css"
+=======
+      "OriginalItemSpec": "wwwroot\\css\\site_proyecto.css"
+>>>>>>> 761c37a (se agrega vista de gestionar proyectos)
     },
     {
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\favicon.ico",
@@ -131,11 +152,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Vista",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
 =======
+=======
+>>>>>>> 9c5427d ( se guardan cambios)
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\js\\site_proyecto.js",
       "SourceId": "Vista",
       "SourceType": "Discovered",
@@ -157,7 +181,16 @@
       "SourceId": "Vista",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+<<<<<<< HEAD
 >>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
+=======
+=======
+      "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+>>>>>>> 761c37a (se agrega vista de gestionar proyectos)
+>>>>>>> 9c5427d ( se guardan cambios)
       "BasePath": "_content/Vista",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",

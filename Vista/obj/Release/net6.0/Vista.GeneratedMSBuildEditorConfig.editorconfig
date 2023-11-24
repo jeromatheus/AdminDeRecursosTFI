@@ -16,6 +16,17 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\pribe\Desktop\AdminDeRecursosTFI\Vista
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
+=======
+[C:/Users/pribe/Desktop/AdminDeRecursosTFI/Vista/Pages/Administrativo/CrearEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cQ3JlYXJFbXBsZWFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pribe/Desktop/AdminDeRecursosTFI/Vista/Pages/Administrativo/GestionarEmpleados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cR2VzdGlvbmFyRW1wbGVhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> 9c5427d ( se guardan cambios)
 [C:/Users/pribe/Desktop/AdminDeRecursosTFI/Vista/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -24,8 +35,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/pribe/Desktop/AdminDeRecursosTFI/Vista/Pages/LiderDeProyecto/prueba.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlkZXJEZVByb3llY3RvXHBydWViYS5jc2h0bWw=
+=======
+[C:/Users/pribe/Desktop/AdminDeRecursosTFI/Vista/Pages/LiderDeProyecto/GestionarProyectos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlkZXJEZVByb3llY3RvXEdlc3Rpb25hclByb3llY3Rvcy5jc2h0bWw=
+>>>>>>> 9c5427d ( se guardan cambios)
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pribe/Desktop/AdminDeRecursosTFI/Vista/Pages/Login/AccesoDenegado.cshtml]
