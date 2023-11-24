@@ -14,6 +14,27 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
- 
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.containerNavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    height: 100vh;
+}
+
+nav {
+    height: 100vh;
+}
+
+.nav-item a {
+    margin: 50px 0px;
+}
+
+header {
+    background-color: #A6CFD5 !important;
 }

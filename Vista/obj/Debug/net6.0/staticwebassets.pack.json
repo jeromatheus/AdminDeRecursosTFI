@@ -9,20 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9c5427d ( se guardan cambios)
-      "Id": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\css\\site_proyectos.css",
-      "PackagePath": "staticwebassets\\css\\site_proyectos.css"
-=======
       "Id": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\css\\site_proyecto.css",
       "PackagePath": "staticwebassets\\css\\site_proyecto.css"
->>>>>>> 761c37a (se agrega vista de gestionar proyectos)
     },
     {
->>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
       "Id": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -31,21 +21,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9c5427d ( se guardan cambios)
       "Id": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\js\\site_proyecto.js",
       "PackagePath": "staticwebassets\\js\\site_proyecto.js"
     },
     {
-<<<<<<< HEAD
->>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
-=======
-=======
->>>>>>> 761c37a (se agrega vista de gestionar proyectos)
->>>>>>> 9c5427d ( se guardan cambios)
       "Id": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

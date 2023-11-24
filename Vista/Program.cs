@@ -1,13 +1,13 @@
 using Negocio.Contratos;
 using Negocio.Servicios;
 
-var builder = WebApplication.CreateBuilder(args);
 
+var builder = WebApplication.CreateBuilder(args); 
 // Add services to the container.
 builder.Services.AddRazorPages();
 //Inycciones de dependencia
-//builder.Services.AddScoped<ISesionService, SesionService>();
-builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
+builder.Services.AddScoped<ISesionService, SesionService>();
+//builder.Services.AddScoped<IEmpleadoService, EmpleadoService>();
 builder.Services.AddScoped<IProyectoService, ProyectoService>();
 
 builder.Services.AddAuthentication("MiCookieDeAutenticacion").AddCookie("MiCookieDeAutenticacion", options =>

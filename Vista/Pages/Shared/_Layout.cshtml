@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+        <nav class="mb-3">
+            <div class="container containerNavbar">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">TFI</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -19,12 +19,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Error">Administrar proyectos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Error"> <i class="fas fa-home"></i> Inicio</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Error"> <i class="fas fa-users"></i> Gestionar Empleados</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Error"> <i class="fas fa-folder"></i> Asignar Empleados</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Error"> <i class="fas fa-tasks"></i> Asignar Tareas</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Error"> <i class="fas fa-file-chart-line"></i> Generar Reportes</a>
                         </li>
                     </ul>
                 </div>
                 <div class="mr-2">
-                    <partial name="_LoginStatusPartial"/>
+                    <partial name="_LoginStatusPartial" />
                 </div>
             </div>
         </nav>
