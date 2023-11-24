@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "jMiyxT359nkmvL/H4JnUv5B9+I6v+pV3i5PoYx3W2BQ=",
+=======
+  "Hash": "3uGshnvhmie+W2nDULK9sc96GNJ8bdHxUVsXzFQ/Rus=",
+>>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
   "Source": "Vista",
   "BasePath": "_content/Vista",
   "Mode": "Default",
@@ -68,10 +72,34 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\favicon.ico",
       "SourceId": "Vista",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\css\\site_proyectos.css",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+      "BasePath": "_content/Vista",
+      "RelativePath": "css/site_proyectos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site_proyectos.css"
+    },
+    {
+      "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\favicon.ico",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+>>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
       "BasePath": "_content/Vista",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -102,10 +130,34 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Vista",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\js\\site_proyecto.js",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+      "BasePath": "_content/Vista",
+      "RelativePath": "js/site_proyecto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site_proyecto.js"
+    },
+    {
+      "Identity": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pribe\\Desktop\\AdminDeRecursosTFI\\Vista\\wwwroot\\",
+>>>>>>> e91bb48 ( se agrega cambios de vista de proyecto)
       "BasePath": "_content/Vista",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",

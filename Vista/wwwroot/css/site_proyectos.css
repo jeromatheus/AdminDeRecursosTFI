@@ -1,0 +1,28 @@
+﻿body {
+    background-color: #F0F3F5;
+}
+.title{
+    text-align:center; 
+}
+table {
+    background-color: white;
+}
+
+.containerBtns{
+    display:flex; 
+    justify-content: space-around; 
+}
+
+.btnLimpiar{
+    background-color: white; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px;
+}
+.btnAregarEmpleado {
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white; 
+}

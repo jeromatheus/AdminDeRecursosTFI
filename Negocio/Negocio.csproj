@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Datos\Datos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contratos\" />
+  </ItemGroup>
+
 </Project>

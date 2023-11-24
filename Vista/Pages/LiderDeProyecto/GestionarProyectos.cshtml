@@ -1,0 +1,104 @@
+﻿@page
+@model Vista.Pages.LiderDeProyecto.GestionarProyectosModel
+@{
+}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/site_proyectos.css" />
+
+<div class="row">
+    <h1 class="title"> <i class="fas fa-users"></i> Asignación de Empleados a Equipo/Proyecto</h1>
+</div>
+
+<div class="row">
+    <div class="col-8 mt-3 mx-auto">
+        <h2> Empleados Activos</h2>
+    </div>
+    <div class="col-4 mt-3 mx-auto">
+        <input type="text" id="myInputEmpleados" onkeyup="filtroDinamicoProyecto('myInputEmpleados', 'myTBodyEmpleados')" placeholder="Buscar empleado por legajo" style="width:80%">
+        <button class="btn-light" inert><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="col-12 mt-3 mx-auto">
+        <table class="table table-bordered" id="tablaEmpleados">
+            <thead>
+                <tr>
+                    <th scope="col">Legajo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Remuneración</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="myTBodyEmpleados">
+                <!--  @foreach (var emp in Model.Empleados)
+                {
+                    <tr >
+                        <td>@emp.Legajo</td>
+                        <td>@emp.Nombre</td>
+                        <td>@emp.Apellido</td>
+                        <td>$xxxx</td>
+                        <td>xxxx</td>
+                        <td colspan="4">
+                            <form asp-page-handler="delete">
+                                <input hidden readonly asp-for="@Model.EmpleadoSeleccionado" id="legajoSeleccionado" type="number" />
+                                <input type="checkbox" id="miCheckbox" name="miCheckbox" onchange="checkboxChanged()" />
+                                <label for="miCheckbox">Mi Checkbox</label>
+                            </form>
+                        </td>
+                    </tr>
+                }-->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+ <div class="row">
+        <div class="col-8 mt-3 mx-auto">
+            <h2> Equipos Activos</h2>
+        </div>
+        <div class="col-4 mt-3 mx-auto">
+            <input type="text" id="myInputEquipos" onkeyup="filtroDinamicoProyecto('myInputEquipos', 'myTBodyEmpleados')" placeholder="Buscar empleado por legajo" style="width:80%">
+            <button class="btn-light" inert><i class="fa fa-search"></i></button>
+        </div>
+        <div class="col-12 mt-3 mx-auto">
+            <table class="table table-bordered" id="tablaEmpleados">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Fecha de Creacion</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="myTBodyEquipos">
+                    <!--  @foreach (var emp in Model.Equipos)
+                    {
+                            <tr >
+                                <td>@emp.EquipoId</td>
+                                <td>@emp.Estado</td>
+                                <td>@emp.FechaDeCreacion</td>
+                                <td colspan="4">
+                                    <form asp-page-handler="delete">
+                                        <input hidden readonly asp-for="@Model.EmpleadoSeleccionado" id="legajoSeleccionado" type="number" />
+                                        <input type="checkbox" id="miCheckbox" name="miCheckbox" onchange="checkboxChanged()" />
+                                        <label for="miCheckbox">Mi Checkbox</label>
+                                    </form>
+                                </td>
+                            </tr>
+                    }-->
+                </tbody>
+            </table>
+        </div>
+  </div>
+
+<div class="row containerBtns">
+    <div class="col-4 mt-3 mx-auto">
+        <button class="btnLimpiar" onclick="limpiarView()"><i class="fas fa-broom"></i> Limpiar Seleccion</button>
+    </div>
+    <div class="col-4 mt-3 mx-auto">
+        <button class="btnAregarEmpleado" ><i class="fas fa-plus"></i> Agregar Empleado a Equipo</button>
+    </div>
+</div>
+
+<script src="~/js/site_proyecto.js"></script>
