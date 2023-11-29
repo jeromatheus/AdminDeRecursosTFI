@@ -35,3 +35,60 @@ function obtenereEmpleadoSeleccionado(x) {
     var legajo = table.rows[x.rowIndex].cells[0].innerHTML;
     document.getElementById("legajoSeleccionado").value = legajo;
 }
+
+
+function filtrarTabla() {
+    var filter, tBody, tr, td, i, txtValue;
+    filter = document.getElementById('selectTipoTarea').value;
+    tBody = document.getElementById("tablaTareas");
+    tr = tBody.getElementsByTagName('tr');
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[6];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+
+            if (filter === "Todas") {
+                tr[i].style.display = "";
+            } else {
+                if (txtValue.indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+}
+
+function validarFecha() {
+    var fechaInput = document.getElementById('Tarea_FechaFinalEstimada').value;
+    var fechaSeleccionada = new Date(fechaInput);
+    var fechaActual = new Date();
+
+    if (fechaSeleccionada <= fechaActual) {
+        alert('Selecciona una fecha futura.');
+        // Puedes tomar otras acciones, como deshabilitar el botón de envío o limpiar el campo.
+        document.getElementById('Tarea_FechaFinalEstimada').value = ''; // Limpiar la fecha
+    }
+}
+
+
+function obtenereTareaSeleccionada(x) {
+    var table = document.getElementById("tablaTareas");
+    for (var i = 0; i < table.rows.length; i++) {
+        table.rows[i].style.backgroundColor = "white";
+        table.rows[i].style.fontSize = "1em";
+        table.rows[i].style.fontWeight = "Normal";
+    }
+
+    x.style.backgroundColor = "gray";
+    x.style.fontSize = "1.2em";
+    x.style.fontWeight = "bold";
+
+    var numeroTarea = table.rows[x.rowIndex].cells[0].innerHTML;
+    var elementos = document.getElementsByClassName("tareaElegida");
+    for (var i = 0; i < elementos.length; i++) {
+        elementos[i].value = numeroTarea;
+    }
+}

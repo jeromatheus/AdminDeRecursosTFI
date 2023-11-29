@@ -1,0 +1,120 @@
+﻿@page
+@using Dominio.Enum;
+@model Vista.Pages.LiderDeProyecto.TimeLineModel
+@{
+}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+@if(Model.Proyecto != null)
+{
+    @if(Model.Proyecto.Tareas.Count > 0)
+    {
+
+        <div class="mt-5 mb-5 col-12 text-center">
+            <h1>Diagrama de Gantt de las tareas</h1>
+        </div>
+        <html>
+        <head>
+            <script type="text/javascript">
+                google.charts.load('current', { 'packages': ['gantt'] });
+                google.charts.load('current', { 'packages': ['corechart'] });
+
+                google.charts.setOnLoadCallback(drawChart1);
+                function drawChart1() {                    
+                    var numeros = [@foreach (var num in Model.Numeros){<text>'@num', </text>}];
+                    var descripciones = [@foreach (var desc in Model.Descripciones){<text>'@desc', </text>}];
+                    var duraciones = [@Html.Raw(string.Join(",", Model.Duraciones))];
+                    var porcentajes = [@string.Join(",", Model.Porcentajes.Select(i => i.ToString()))];
+
+                    var DiasInicio = [@string.Join(",", Model.DiasInicio.Select(i => i.ToString()))];
+                    var MesesInicio = [@string.Join(",", Model.MesesInicio.Select(i => i.ToString()))];
+                    var AnosInicio = [@string.Join(",", Model.AnosInicio.Select(i => i.ToString()))];
+
+                    var DiasFin = [@string.Join(",", Model.DiasFin.Select(i => i.ToString()))];
+                    var MesesFin = [@string.Join(",", Model.MesesFin.Select(i => i.ToString()))];
+                    var AnosFin = [@string.Join(",", Model.AnosFin.Select(i => i.ToString()))];
+
+
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'Task ID');
+                    data.addColumn('string', 'Task Name');
+                    data.addColumn('string', 'Resource');
+                    data.addColumn('date', 'Start Date');
+                    data.addColumn('date', 'End Date');
+                    data.addColumn('number', 'Duration');
+                    data.addColumn('number', 'Percent Complete');
+                    data.addColumn('string', 'Dependencies');
+
+                    for (var i = 0; i < numeros.length; i++) {
+                        data.addRows([
+                            [numeros[i], descripciones[i], 'Ninguno', new Date(AnosInicio[i], MesesInicio[i], DiasInicio[i]),
+                            new Date(AnosFin[i], MesesFin[i], DiasFin[i]), duraciones[i], porcentajes[i], null]
+                        ]);
+                    }
+
+                    var options = {
+                        height: 400,
+                        gantt: {
+                            trackHeight: 30
+                        }
+                    };
+                    var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
+                    chart.draw(data, options);
+                }
+
+                google.charts.setOnLoadCallback(drawChart2);
+                function drawChart2() {
+                    var totales = [@foreach (var num in Model.Totales){<text>'@num', </text>}];
+
+                    var totalesNumeros = totales.map(function (valor) {
+                        return parseInt(valor, 10); 
+                    });
+                    
+                    var data = google.visualization.arrayToDataTable([
+                        ['Tarea', 'Progreso'],
+                        ['Terminadas', totalesNumeros[0]],
+                        ['Incompletas',totalesNumeros[1]],
+                        ['Sin iniciar', totalesNumeros[2]]
+                    ]);
+                    var options = {
+                        title: 'Progreso de tareas'
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                    chart.draw(data, options);
+                }
+            </script>
+        </head>
+        <body>
+            <div id="chart_div"></div>
+            <div class="col-12 text-center">
+                <h4>Tareas más próximas a vencerse</h4>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto d-flex justify-content-center align-items-center">
+                    <ul>
+                        @foreach (var tarea in Model.Proyecto.Tareas
+                       .Where(t => t.Estado.Equals(EstadoTarea.Incompleta) || t.Estado.Equals(EstadoTarea.Sin_Iniciar))
+                       .OrderBy(t => t.FechaFinalEstimada))
+                        {
+                            <li>@tarea.Descripcion @tarea.FechaFinalEstimada.Date.ToString().Split(' ')[0]</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-2 mb-3 col-12 text-center">
+                <h2>Estadísticas del proyecto</h2>
+            </div>
+            <div id="piechart" class="col-8" style="width: 900px; height: 500px;"></div>
+        </body>
+        </html>
+    }
+    else
+    {
+        <h1 class="text-center bold text-danger">No hay ninguna tarea asocaida al proyecto</h1>
+    }
+}
+else{
+    <h1 class="text-center bold text-danger">No posee ningún proyecto activo</h1>
+}

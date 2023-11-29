@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UhamIL1XAYPYyXtjxDW8Bo1LuytvKbo99n81JGEuNhU=",
+  "Hash": "4IIjX9STl59ExIJ8BDXDv/Jm3viH1LOBXlo28C6pWhg=",
   "Source": "Vista",
   "BasePath": "_content/Vista",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Vista.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\css\\gestionarProyecto.css",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\",
+      "BasePath": "_content/Vista",
+      "RelativePath": "css/gestionarProyecto.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\gestionarProyecto.css"
+    },
+    {
       "Identity": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\css\\site.css",
       "SourceId": "Vista",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\js\\gestionarProyecto.js",
+      "SourceId": "Vista",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\",
+      "BasePath": "_content/Vista",
+      "RelativePath": "js/gestionarProyecto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\gestionarProyecto.js"
     },
     {
       "Identity": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\js\\site.js",

@@ -14,6 +14,7 @@ namespace Vista.Pages.Login
 
         public Usuario Usuario { get; set; }
         public Empleado Empleado { get; set; }
+        public static int EmpleadoId { get; set; }
 
 
         public IniciarSesionModel(ISesionService servicio)
@@ -31,13 +32,19 @@ namespace Vista.Pages.Login
             Empleado = _servicio.AutenticarDatos(Usuario);
             if (Empleado != null)
             {
-                List<Claim> claims = new List<Claim>() { new Claim(ClaimTypes.Name, Empleado.Usuario.NombreDeUsuario) };
-                switch (Empleado.Puesto.Descripcion)
-                {
-                    case "Administrativo":
+                EmpleadoId = Empleado.Legajo;
+                List<Claim> claims = new List<Claim>() 
+                { 
+                    new Claim(ClaimTypes.Name, Empleado.Usuario.NombreDeUsuario) 
+                };
+
+                if(Empleado.Puesto.Descripcion == "Administrativo")
                         claims.Add(new Claim("Empleado", "Administrativo"));
-                        break;
-                }
+                else if(Empleado.LiderDeProyecto)
+                    claims.Add(new Claim("Empleado", "LiderDeProyecto"));
+                else
+                    claims.Add(new Claim("Empleado", "Normal"));
+
                 var identity = new ClaimsIdentity(claims, "MiCookieDeAutenticacion");
                 ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
                 await HttpContext.SignInAsync("MiCookieDeAutenticacion", claimsPrincipal);

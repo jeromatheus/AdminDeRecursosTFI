@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cQ3JlYXJFbXBsZWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Administrativo/EditarEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cRWRpdGFyRW1wbGVhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Administrativo/GestionarEmpleados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpdm9cR2VzdGlvbmFyRW1wbGVhZG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/LiderDeProyecto/AsignarTareas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlkZXJEZVByb3llY3RvXEFzaWduYXJUYXJlYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/LiderDeProyecto/GestionarProyecto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlkZXJEZVByb3llY3RvXEdlc3Rpb25hclByb3llY3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/LiderDeProyecto/TimeLine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlkZXJEZVByb3llY3RvXFRpbWVMaW5lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jerom/Desktop/PROGRAMACIÓN/puntoNET/Platzi/ArquitecturaDistribuida/AdministracionDeRecursosTFI/Vista/Pages/Login/AccesoDenegado.cshtml]

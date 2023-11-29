@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Datos.Migrations
 {
     [DbContext(typeof(DatosContexto))]
-    [Migration("20231107024020_Inicial")]
-    partial class Inicial
+    [Migration("20231127232532_segunda")]
+    partial class segunda
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,6 +27,9 @@ namespace Datos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("NombreArea")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AreaId");
 
@@ -82,14 +85,17 @@ namespace Datos.Migrations
                     b.Property<int?>("AreaId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CUIT")
-                        .HasColumnType("int");
+                    b.Property<long>("CUIT")
+                        .HasColumnType("bigint");
 
                     b.Property<int?>("EquipoId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaDeNacimiento")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("LiderDeProyecto")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -168,6 +174,9 @@ namespace Datos.Migrations
                     b.Property<int?>("EquipoId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("FechaDeFinalizacionEstimada")
                         .HasColumnType("datetime2");
 
@@ -214,11 +223,11 @@ namespace Datos.Migrations
                     b.Property<float>("Bruto")
                         .HasColumnType("real");
 
-                    b.Property<float>("DescuentoJubilacion")
-                        .HasColumnType("real");
+                    b.Property<double>("DescuentoJubilacion")
+                        .HasColumnType("float");
 
-                    b.Property<float>("DescuentoObraSocial")
-                        .HasColumnType("real");
+                    b.Property<double>("DescuentoObraSocial")
+                        .HasColumnType("float");
 
                     b.HasKey("SueldoId");
 
@@ -238,19 +247,25 @@ namespace Datos.Migrations
                     b.Property<int?>("EmpleadoLegajo")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaFin")
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaFinalEstimada")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaFinalReal")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("FechaInicio")
                         .HasColumnType("datetime2");
 
+                    b.Property<double>("HorasDedicacionEstimadas")
+                        .HasColumnType("float");
+
+                    b.Property<int>("Prioridad")
+                        .HasColumnType("int");
+
                     b.Property<int?>("ProyectoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TiempoDedicacionEstimado")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TiempoDedicacionReal")
                         .HasColumnType("int");
 
                     b.HasKey("TareaId");
@@ -315,13 +330,15 @@ namespace Datos.Migrations
 
             modelBuilder.Entity("Dominio.Entidades.Proyecto", b =>
                 {
-                    b.HasOne("Dominio.Entidades.Cliente", null)
-                        .WithMany("Proyectos")
+                    b.HasOne("Dominio.Entidades.Cliente", "Cliente")
+                        .WithMany()
                         .HasForeignKey("ClienteId");
 
                     b.HasOne("Dominio.Entidades.Equipo", "Equipo")
                         .WithMany()
                         .HasForeignKey("EquipoId");
+
+                    b.Navigation("Cliente");
 
                     b.Navigation("Equipo");
                 });
@@ -335,11 +352,6 @@ namespace Datos.Migrations
                     b.HasOne("Dominio.Entidades.Proyecto", null)
                         .WithMany("Tareas")
                         .HasForeignKey("ProyectoId");
-                });
-
-            modelBuilder.Entity("Dominio.Entidades.Cliente", b =>
-                {
-                    b.Navigation("Proyectos");
                 });
 
             modelBuilder.Entity("Dominio.Entidades.Empleado", b =>

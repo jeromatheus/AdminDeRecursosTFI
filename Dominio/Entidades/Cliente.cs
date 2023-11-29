@@ -17,6 +17,6 @@ namespace Dominio.Entidades
         public int Telefono { get; set; }
         public string? Mail { get; set; }
 
-        public List<Proyecto>? Proyectos { get; set; }
+        // public List<Proyecto>? Proyectos { get; set; }
     }
 }

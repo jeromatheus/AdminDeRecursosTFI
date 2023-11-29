@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dominio.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,11 @@ namespace Dominio.Entidades
     {
         public int TareaId { get; set; }
         public string? Descripcion { get; set; }
-        public int TiempoDedicacionEstimado { get; set; }
-        public int TiempoDedicacionReal { get; set; }
+        public double HorasDedicacionEstimadas { get; set; }
         public DateTime FechaInicio { get; set; }
-        public DateTime FechaFin { get; set; }
+        public DateTime FechaFinalReal { get; set; }
+        public DateTime FechaFinalEstimada { get; set; }
+        public EstadoTarea Estado { get; set; } = EstadoTarea.Sin_Iniciar;
+        public PrioridadTarea Prioridad { get; set; } = PrioridadTarea.Baja;
     }
 }

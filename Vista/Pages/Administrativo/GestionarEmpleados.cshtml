@@ -10,22 +10,28 @@
         <button class="btn-light" inert><i class="fa fa-search"></i></button>
     </div>
 
-    <div class="col-3">
-        <a class="btn btn-success" href="/Administrativo/CrearEmpleado"><i class="fa fa-plus"></i>  Agregar nuevo empleado</a>
+    <div class="row mt-3">
+        <div class="col-3">
+            <a class="btn btn-success" href="/Administrativo/CrearEmpleado"><i class="fa fa-plus"></i>  Agregar nuevo empleado</a>
+        </div>
+        <div class="col-3 ms-5">
+            <a class="btn btn-warning" href="/Administrativo/EditarEmpleado"><i class="fa fa-edit"></i>  Editar un empleado</a>
+        </div>
     </div>
 
+
     <div class="col-12 mt-3 mx-auto">
-        <table class="table table-bordered" id="tablaEmpleados">
+        <table class="table table-bordered text-center" id="tablaEmpleados">
             <thead>
                 <tr>
                     <th scope="col">Legajo</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido</th>
                     <th scope="col">Remuneración</th>
-                    <th scope="col">Rol</th>
-                    <th scope="col"></th>
+                    <th scope="col">Puesto</th>
                 </tr>
             </thead>
+
             <tbody id="myTBody">
                 @foreach (var emp in Model.Empleados)
                 {
@@ -33,21 +39,21 @@
                         <td>@emp.Legajo</td>
                         <td>@emp.Nombre</td>
                         <td>@emp.Apellido</td>
-                        <td>$xxxx</td>
-                        <td>xxxx</td>
-                        <td colspan="4">
-                            <form asp-page-handler="delete">
-                                <input hidden readonly asp-for="@Model.LegajoSeleccionado" id="legajoSeleccionado" type="number" />
-                                <button class="btn btn-danger" id="btnBorrar" onclick="return confirm('¿Está seguro que desea eliminar?')">
-                                    <i class="fa fa-trash"></i>
-                                </button>
-                            </form>
-                        </td>
+                        <td>$@emp.Sueldo.Bruto</td>
+                        <td>@emp.Puesto.Descripcion</td>
                     </tr>                    
                 }
             </tbody>
         </table>
-        <h1 id="legajoSeleccionado" type="number" />
+    </div>
+    <div class="row text-center justify-content-center align-items-center">
+        <form asp-page-handler="delete">
+            <label>Empleado a eliminar: </label>
+            <input readonly asp-for="@Model.LegajoSeleccionado" id="legajoSeleccionado" type="number" />
+            <button class="btn btn-danger" id="btnBorrar" onclick="return confirm('¿Está seguro que desea eliminar?')">
+                <i class="fa fa-trash"></i>
+            </button>
+        </form>
     </div>
 </div>
 

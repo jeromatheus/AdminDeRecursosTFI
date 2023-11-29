@@ -12,7 +12,9 @@ namespace Dominio.Entidades
         public string? Nombre { get; set; }
         public string? Apellido { get; set; }
         public DateTime FechaDeNacimiento { get; set; }
-        public int CUIT { get; set; }
+        public long CUIT { get; set; }
+        public bool LiderDeProyecto { get; set; } = false;
+
 
         public Usuario? Usuario { get; set; }
         public Sueldo? Sueldo { get; set; }

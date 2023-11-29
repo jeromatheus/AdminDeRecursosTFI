@@ -22,7 +22,8 @@ namespace Vista.Pages.Administrativo
 
         public void OnGet()
         {
-            cargarMockupEmpleados();
+            //cargarMockupEmpleados();
+            Empleados = _servicio.ObtenerEmpleados();
         }
 
 
@@ -41,14 +42,12 @@ namespace Vista.Pages.Administrativo
                 Nombre = "Juan",
                 Apellido = "Perez",
                 Legajo = 2000,
-                FechaDeNacimiento = System.DateTime.MinValue
             };
             Empleado e2 = new Empleado()
             {
                 Nombre = "Maria",
                 Apellido = "Gomez",
                 Legajo = 2001,
-                FechaDeNacimiento = DateTime.Parse("1990-05-15")
             };
 
             Empleado e3 = new Empleado()
@@ -56,7 +55,6 @@ namespace Vista.Pages.Administrativo
                 Nombre = "Carlos",
                 Apellido = "Rodriguez",
                 Legajo = 2002,
-                FechaDeNacimiento = DateTime.Parse("1985-08-20")
             };
             Empleados.Add(e1);
             Empleados.Add(e2);

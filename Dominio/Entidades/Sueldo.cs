@@ -9,8 +9,8 @@ namespace Dominio.Entidades
     public class Sueldo
     {
         public int SueldoId { get; set; }
-        public float Bruto { get; set; }
-        public float DescuentoJubilacion { get; set; }
-        public float DescuentoObraSocial { get; set; }
+        public float Bruto { get; set; } = 0;
+        public double DescuentoJubilacion { get; set; } = 0.11;
+        public double DescuentoObraSocial { get; set; } = 0.03;
     }
 }

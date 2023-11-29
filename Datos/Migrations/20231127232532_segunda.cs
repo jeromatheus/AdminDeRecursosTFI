@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Datos.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class segunda : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,8 @@ namespace Datos.Migrations
                 columns: table => new
                 {
                     AreaId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1")
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NombreArea = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -85,8 +86,8 @@ namespace Datos.Migrations
                     SueldoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Bruto = table.Column<float>(type: "real", nullable: false),
-                    DescuentoJubilacion = table.Column<float>(type: "real", nullable: false),
-                    DescuentoObraSocial = table.Column<float>(type: "real", nullable: false)
+                    DescuentoJubilacion = table.Column<double>(type: "float", nullable: false),
+                    DescuentoObraSocial = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -117,9 +118,10 @@ namespace Datos.Migrations
                     FechaDeInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaDeFinalizacionEstimada = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaDeFinalizacionReal = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Estado = table.Column<int>(type: "int", nullable: false),
                     Costo = table.Column<float>(type: "real", nullable: false),
-                    EquipoId = table.Column<int>(type: "int", nullable: true),
-                    ClienteId = table.Column<int>(type: "int", nullable: true)
+                    ClienteId = table.Column<int>(type: "int", nullable: true),
+                    EquipoId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -147,7 +149,8 @@ namespace Datos.Migrations
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FechaDeNacimiento = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CUIT = table.Column<int>(type: "int", nullable: false),
+                    CUIT = table.Column<long>(type: "bigint", nullable: false),
+                    LiderDeProyecto = table.Column<bool>(type: "bit", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: true),
                     SueldoId = table.Column<int>(type: "int", nullable: true),
                     AreaId = table.Column<int>(type: "int", nullable: true),
@@ -196,10 +199,12 @@ namespace Datos.Migrations
                     TareaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TiempoDedicacionEstimado = table.Column<int>(type: "int", nullable: false),
-                    TiempoDedicacionReal = table.Column<int>(type: "int", nullable: false),
+                    HorasDedicacionEstimadas = table.Column<double>(type: "float", nullable: false),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FechaFinalReal = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FechaFinalEstimada = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Estado = table.Column<int>(type: "int", nullable: false),
+                    Prioridad = table.Column<int>(type: "int", nullable: false),
                     EmpleadoLegajo = table.Column<int>(type: "int", nullable: true),
                     ProyectoId = table.Column<int>(type: "int", nullable: true)
                 },

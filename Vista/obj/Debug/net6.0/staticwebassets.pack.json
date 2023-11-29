@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\Vista.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\css\\gestionarProyecto.css",
+      "PackagePath": "staticwebassets\\css\\gestionarProyecto.css"
+    },
+    {
       "Id": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\js\\gestionarProyecto.js",
+      "PackagePath": "staticwebassets\\js\\gestionarProyecto.js"
     },
     {
       "Id": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Vista\\wwwroot\\js\\site.js",
