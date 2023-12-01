@@ -17,6 +17,7 @@ body {
     border-radius: 20px;
     padding: 10px 20px;
     color: white;
+    box-shadow: 1px 1px 5px #888888;
 }
 
 .btnLimpiar {
@@ -24,6 +25,7 @@ body {
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
+    box-shadow: 1px 1px 5px #888888;
 }
 
 .row {
@@ -36,4 +38,25 @@ tr td, th {
 
 table {
     background-color: white;
+}
+.tituloPpal {
+    padding-top: 32px !important;
+}
+
+.inputFiltroEmpleado {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btnFiltro {
+    position: relative;
+    background-color: #0097b6 !important;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    right: 53px;
+    top: -3px;
 }

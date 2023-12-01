@@ -5972,19 +5972,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jerom\\.nuget\\packages\\": {}
+    "C:\\Users\\pribe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj",
+      "projectUniqueName": "C:\\Users\\pribe\\Desktop\\copia\\nuevo_admin\\Negocio\\Negocio.csproj",
       "projectName": "Negocio",
-      "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\Negocio.csproj",
-      "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Negocio\\obj\\",
+      "projectPath": "C:\\Users\\pribe\\Desktop\\copia\\nuevo_admin\\Negocio\\Negocio.csproj",
+      "packagesPath": "C:\\Users\\pribe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pribe\\Desktop\\copia\\nuevo_admin\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jerom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pribe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5998,8 +5998,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj": {
-              "projectPath": "C:\\Users\\jerom\\Desktop\\PROGRAMACIÓN\\puntoNET\\Platzi\\ArquitecturaDistribuida\\AdministracionDeRecursosTFI\\Datos\\Datos.csproj"
+            "C:\\Users\\pribe\\Desktop\\copia\\nuevo_admin\\Datos\\Datos.csproj": {
+              "projectPath": "C:\\Users\\pribe\\Desktop\\copia\\nuevo_admin\\Datos\\Datos.csproj"
             }
           }
         }
@@ -6029,7 +6029,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

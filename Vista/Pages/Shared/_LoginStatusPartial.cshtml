@@ -3,10 +3,10 @@
 {
     <form method="post" class="form-inline" asp-page="/Login/CerrarSesion">
         Bienvenido @User.Identity.Name
-        <button type="submit" class="ml-0 btn btn-link">Cerrar sesión</button>
+        <button type="submit" class="btnLogOut"><i class="fas fa-arrow-circle-left iconLogOut"></i> <br /> <span class="text-nav">Salir</span> </button>
     </form>
 }
 else
 {
-    <a class="btn btn-link" asp-page="/Login/IniciarSesion">Autenticarse</a>
+    <a class="btn btn-link" asp-page="/Login/IniciarSesion"> <i class="fas fa-solid fa-arrow-right iconLogOut"></i> <br /> <span class="text-nav">Iniciar Sesion</span> </a>
 }

@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link rel="stylesheet" href="~/css/gestionarProyecto.css" />
 
-<div class="row">
+<div class="row tituloPpal">
     <h1 class="title"> <i class="fas fa-users"></i> Asignación de Empleados a Equipo/Proyecto</h1>
 </div>
 
@@ -14,8 +14,8 @@
         <h2> Empleados Activos</h2>
     </div>
     <div class="col-4 mt-3 mx-auto">
-        <input type="text" id="myInputEmpleados" onkeyup="filtroDinamicoProyecto('myInputEmpleados', 'myTBodyEmpleados')" placeholder="Buscar empleado por legajo" style="width:80%">
-        <button class="btn-light" inert><i class="fa fa-search"></i></button>
+        <input type="text" id="myInputEmpleados" onkeyup="filtroDinamicoProyecto('myInputEmpleados', 'myTBodyEmpleados')" placeholder="Buscar empleado por legajo"  class="inputFiltroEmpleado">
+        <button class="btnFiltro" inert><i class="fa fa-search"></i></button>
     </div>
 
     <div class="col-12 mt-3 mx-auto">
@@ -31,7 +31,7 @@
                 </tr>
             </thead>
             <tbody id="myTBodyEmpleados">
-                @foreach (var emp in Model.EmpleadosDisponibles)
+ @*               <!--  @foreach (var emp in Model.EmpleadosDisponibles)
                 {
                     <tr>
                         <td>@emp.Legajo</td>
@@ -48,6 +48,7 @@
                         </td>
                     </tr>
                 }
+                }-->*@
             </tbody>
         </table>
     </div>
@@ -58,8 +59,8 @@
         <h2> Equipos Activos</h2>
     </div>
     <div class="col-4 mt-3 mx-auto">
-        <input type="text" id="myInputEquipos" onkeyup="filtroDinamicoProyecto('myInputEquipos', 'myTBodyEmpleados')" placeholder="Buscar empleado por legajo" style="width:80%">
-        <button class="btn-light" inert><i class="fa fa-search"></i></button>
+        <input type="text" id="myInputEquipos" onkeyup="filtroDinamicoProyecto('myInputEquipos', 'myTBodyEmpleados')" placeholder="Buscar empleado por legajo" class="inputFiltroEmpleado">
+        <button class="btnFiltro" inert><i class="fa fa-search"></i></button>
     </div>
     <div class="col-12 mt-3 mx-auto">
         <table class="table table-bordered" id="tablaEmpleados">
@@ -97,7 +98,7 @@
         <button class="btnLimpiar" onclick="limpiarView()"><i class="fas fa-broom"></i> Limpiar Seleccion</button>
     </div>
     <div class="col-4 mt-3 mx-auto">
-        <button class="btnAregarEmpleado"><i class="fas fa-plus"></i> Agregar Empleado a Equipo</button>
+        <button class="btnAgregarEmpleado"><i class="fas fa-plus"></i> Agregar Empleado a Equipo</button>
     </div>
 </div>
 

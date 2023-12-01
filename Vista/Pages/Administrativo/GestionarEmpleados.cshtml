@@ -3,23 +3,29 @@
 @{
 }
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/gestionarEmpleados.css" />
 
-<div class="col-12">
-    <div class="col-4 mt-3 mx-auto">
-        <input type="text" id="myInput" onkeyup="filtroDinamico()" placeholder="Buscar empleado por apellido" style="width:80%">
-        <button class="btn-light" inert><i class="fa fa-search"></i></button>
+<div class="row tituloPpal">
+    <h1 class="title"> <i class="fas fa-users"></i> Gestionar Empleados</h1>
+</div>
+
+<div class="row containerFiltro">
+    <div class="col-4 mt-3">
+        <input type="text" id="myInput" onkeyup="filtroDinamico()" placeholder="Buscar empleado por apellido" class="inputFiltroEmpleado" >
+        <button class="btnFiltro" inert><i class="fa fa-search"></i></button>
     </div>
+</div>
 
-    <div class="row mt-3">
-        <div class="col-3">
-            <a class="btn btn-success" href="/Administrativo/CrearEmpleado"><i class="fa fa-plus"></i>  Agregar nuevo empleado</a>
-        </div>
-        <div class="col-3 ms-5">
-            <a class="btn btn-warning" href="/Administrativo/EditarEmpleado"><i class="fa fa-edit"></i>  Editar un empleado</a>
-        </div>
+<div class="row mt-3">
+    <div class="col-3">
+        <a class="btn btnAgregarEmpleado" href="/Administrativo/CrearEmpleado"><i class="fa fa-plus"></i>  Agregar empleado</a>
     </div>
+    <div class="col-3 ms-5">
+        <a class="btn btnModificarEmpleado" href="/Administrativo/EditarEmpleado"><i class="fa fa-edit"></i>  Editar empleado</a>
+    </div>
+</div>
 
-
+<div class="row">
     <div class="col-12 mt-3 mx-auto">
         <table class="table table-bordered text-center" id="tablaEmpleados">
             <thead>
@@ -33,7 +39,7 @@
             </thead>
 
             <tbody id="myTBody">
-                @foreach (var emp in Model.Empleados)
+   @*            @foreach (var emp in Model.Empleados)
                 {
                     <tr onclick="obtenereEmpleadoSeleccionado(this)">
                         <td>@emp.Legajo</td>
@@ -42,19 +48,20 @@
                         <td>$@emp.Sueldo.Bruto</td>
                         <td>@emp.Puesto.Descripcion</td>
                     </tr>                    
-                }
+                }*@
             </tbody>
         </table>
     </div>
-    <div class="row text-center justify-content-center align-items-center">
-        <form asp-page-handler="delete">
-            <label>Empleado a eliminar: </label>
-            <input readonly asp-for="@Model.LegajoSeleccionado" id="legajoSeleccionado" type="number" />
-            <button class="btn btn-danger" id="btnBorrar" onclick="return confirm('¿Está seguro que desea eliminar?')">
-                <i class="fa fa-trash"></i>
-            </button>
-        </form>
-    </div>
+ 
+</div>
+<div class="row text-center justify-content-center align-items-center">
+    <form asp-page-handler="delete">
+        <label class="tituloEliminarEmpleado">Empleado a eliminar: </label>
+        <input readonly asp-for="@Model.LegajoSeleccionado" id="legajoSeleccionado" type="number" />
+        <button class="btnEliminarEmpleado" id="btnBorrar" onclick="return confirm('¿Está seguro que desea eliminar?')">
+            <i class="fa fa-trash"></i>
+        </button>
+    </form>
 </div>
 
 

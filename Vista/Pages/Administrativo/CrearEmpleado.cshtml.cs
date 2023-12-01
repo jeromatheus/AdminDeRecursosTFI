@@ -6,7 +6,7 @@ using Negocio.Contratos;
 
 namespace Vista.Pages.Administrativo
 {
-    [Authorize(Policy = "DebeSerAdmininstrativo")]
+   // [Authorize(Policy = "DebeSerAdmininstrativo")]
     [BindProperties]
     public class CrearEmpleadoModel : PageModel
     {
@@ -28,11 +28,11 @@ namespace Vista.Pages.Administrativo
         public void OnGet()
         {
             //cargarMockupAreas();
-            AreasDeTrabajo = _servicio.ObtenerAreasLaborales();
+           // AreasDeTrabajo = _servicio.ObtenerAreasLaborales();
         }
 
         public void OnPost()    
-        {
+        {/*
             if (DatosCompletos())
             {
                 Empledo.Area = _servicio.ObtenerAreasLaborales()[IndiceAreaSeleccionada];
@@ -43,7 +43,7 @@ namespace Vista.Pages.Administrativo
                 _servicio.AgregarEmpleado(Empledo);
             } 
             else
-                OnGet();
+                OnGet();*/
         }
 
 

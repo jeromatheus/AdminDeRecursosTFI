@@ -22,9 +22,9 @@ namespace Vista.Pages.LiderDeProyecto
 
         public void OnGet()
         {
-            Proyecto = _servicio.ObtenerProyectoActual(IniciarSesionModel.EmpleadoId);
-            if (Proyecto != null)
-                EmpleadosDisponibles = _servicio.ObtenerEmpleadosDisponibles();
+           // Proyecto = _servicio.ObtenerProyectoActual(IniciarSesionModel.EmpleadoId);
+           // if (Proyecto != null)
+              //  EmpleadosDisponibles = _servicio.ObtenerEmpleadosDisponibles();
         }
     }
 }

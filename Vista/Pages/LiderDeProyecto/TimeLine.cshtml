@@ -4,14 +4,36 @@
 @{
 }
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/timeLine.css" />
 
 @if(Model.Proyecto != null)
 {
     @if(Model.Proyecto.Tareas.Count > 0)
     {
-
-        <div class="mt-5 mb-5 col-12 text-center">
-            <h1>Diagrama de Gantt de las tareas</h1>
+        <div class="mt-3 mb-3 col-12 text-center">
+            <h1 id="tituloImprimir" class="ocultar">Diagrama de Gantt de las tareas del Proyecto </h1>
+            <h1 id="tituloPantalla">Diagrama de Gantt de las tareas </h1>
+        </div>
+        <div id="containerInfoProyecto" class="col-12 ocultar">
+            <h4>Información del Proyecto: </h4>
+            <ul>
+                <li> Descripción: @Model.Proyecto.Descripcion</li>
+                <li> Costo: @Model.Proyecto.Costo</li>
+                <li> Fecha Inicio:  @Model.Proyecto.FechaDeInicio</li>
+                <li> Fecha Fin Estimada: @Model.Proyecto.FechaDeFinalizacionEstimada</li>
+                <li> Fecha FIn Real: @Model.Proyecto.FechaDeFinalizacionReal</li>
+            </ul>
+        </div>
+        <div id="containerInfoCliente" class=" col-12 ocultar">
+            <h4>Información del Cliente: </h4>
+            <ul>
+                <li> Apellido y Nombre: @Model.Proyecto.Cliente.Apellido, @Model.Proyecto.Cliente.Nombre </li>
+                <li> Mail: @Model.Proyecto.Cliente.Mail </li>
+                <li> Empresa: @Model.Proyecto.Cliente.Empresa </li>
+                <li> País:  @Model.Proyecto.Cliente.Pais </li>
+                <li> Telefono: @Model.Proyecto.Cliente.Telefono </li>
+            </ul>
         </div>
         <html>
         <head>
@@ -107,6 +129,16 @@
                 <h2>Estadísticas del proyecto</h2>
             </div>
             <div id="piechart" class="col-8" style="width: 900px; height: 500px;"></div>
+            <div  class="row" >
+                <div class="col-4">
+                    <button type="button" class="btnImprimir">Imprimir Informe</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <button type="button" class="btnImprimir" onclick="imprimirInforme()"><i class="fas fa-print"></i> Imprimir Informe</button>
+                </div>
+            </div>
         </body>
         </html>
     }
@@ -117,4 +149,7 @@
 }
 else{
     <h1 class="text-center bold text-danger">No posee ningún proyecto activo</h1>
+
+  
 }
+<script src="~/js/timeLine.js"></script>

@@ -92,3 +92,13 @@ function obtenereTareaSeleccionada(x) {
         elementos[i].value = numeroTarea;
     }
 }
+
+function ocultarNavBar() {
+    if (window.location.pathname == "/Login/IniciarSesion") {
+        const navBar = document.querySelector(".containerNavBar");
+        navBar.classList.remove("containerNavBar");
+        navBar.classList.add("ocultarNavBar"); 
+    }
+}
+
+ocultarNavBar(); 

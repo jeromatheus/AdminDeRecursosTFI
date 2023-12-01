@@ -3,14 +3,23 @@
 @{
 }
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-<h2 class="text-center">Editar empleado</h2>
-<form asp-page-handler="buscar" class="mt-5">
-    <div class="col-4 mt-3 mx-auto">
-        <input type="text" asp-for="Legajo" placeholder="Buscar empleado por legajo" style="width:80%">
-        <button class="btn-light" type="submit"><i class="fa fa-search"></i></button>
+<link rel="stylesheet" href="~/css/gestionarEmpleados.css" />
+<div class="row containerTitulo">
+    <div class="col-10 ">
+        <h2 class="text-center"><i class="fa fa-edit"></i> Editar empleado</h2>
+    </div>
+    <div class="col-2 ">
+        <a class="btn btnCerrarVentana" href="/Administrativo/GestionarEmpleados"><i class="fas fa-times"></i></a>
+    </div>
+</div>
+<div class="row ">
+    <form asp-page-handler="buscar" class="containerFiltro">
+    <div class="col-4 mt-3">
+            <input type="text" asp-for="Legajo" placeholder="Buscar empleado por legajo" class="inputFiltroEmpleado">
+            <button class="btnFiltro" type="submit"><i class="fa fa-search"></i></button>
     </div>
 </form>
+</div>
 <form asp-page-handler="update" class="mt-3">
     <div class="row mb-3">
         <div class="col-12 col-md-2">
@@ -77,12 +86,14 @@
             <label class="form-label">Área nueva:</label>
         </div>
         <div class="col-12 col-md-4">
+            @*
             <select asp-for="IndiceAreaSeleccionada" class="form-control">
                 @for (int i = 0; i < Model.AreasDeTrabajo.Count(); i++)
                 {
                     <option value="@i">@Model.AreasDeTrabajo[i].NombreArea</option>
                 }
             </select>
+            *@
         </div>
     </div>
     <div class="row mb-3">
@@ -119,10 +130,10 @@
             <input readonly placeholder="3 %" class="form-control text-center" />
         </div>
     </div>
-    <div class="row mt-5 text-center">
+    <div class="row mt-2 text-center">
         <div class="col-12">
-            <button type="button" class="btn btn-danger me-4" style="width:10%">Limpiar</button>
-            <button type="submit" class="btn btn-success" style="width:10%">Confirmar</button>
+            <button type="button" class="btnLimpiar me-4"> <i class="fas fa-broom"></i> Limpiar</button>
+            <button type="submit" class="btnConfirmar" >Confirmar</button>
         </div>
     </div>
 </form>
