@@ -6,7 +6,7 @@ using Negocio.Contratos;
 
 namespace Vista.Pages.Administrativo
 {
-  //  [Authorize(Policy = "DebeSerAdmininstrativo")]
+    [Authorize(Policy = "DebeSerAdmininstrativo")]
     [BindProperties]
     public class EditarEmpleadoModel : PageModel
     {
@@ -24,7 +24,7 @@ namespace Vista.Pages.Administrativo
         }
         public void OnGet()
         {
-            //AreasDeTrabajo = _servicio.ObtenerAreasLaborales();
+            AreasDeTrabajo = _servicio.ObtenerAreasLaborales();
         }
         public void OnPostBuscar()
         {

@@ -8,7 +8,7 @@ using Vista.Pages.Login;
 namespace Vista.Pages.LiderDeProyecto
 {
     [BindProperties]
-   // [Authorize(Policy = "DebeSerLiderDeProyecto")]
+    [Authorize(Policy = "DebeSerLiderDeProyecto")]
     public class AsignarTareasModel : PageModel
     {
         private IAsignarTareasService _servicio;
@@ -25,9 +25,9 @@ namespace Vista.Pages.LiderDeProyecto
 
         public void OnGet()
         {
-           /* Proyecto = _servicio.ObtenerProyectoActual(IniciarSesionModel.EmpleadoId);
+           Proyecto = _servicio.ObtenerProyectoActual(IniciarSesionModel.EmpleadoId);
             if (Proyecto != null)
-                EmpleadosDisponibles = _servicio.ObtenerEmpleadosDisponibles(Proyecto.Equipo.EquipoId);*/
+                EmpleadosDisponibles = _servicio.ObtenerEmpleadosDisponibles(Proyecto.Equipo.EquipoId);
         }
 
         public void OnPost()

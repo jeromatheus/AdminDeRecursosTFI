@@ -65,14 +65,14 @@
             <label class="form-label">Área:</label>
         </div>
         <div class="col-12 col-md-9">
-            @*
+            
             <select asp-for="IndiceAreaSeleccionada" class="form-control w-50">
                 @for (int i = 0; i < Model.AreasDeTrabajo.Count(); i++)
                 {
                     <option value="@i">@Model.AreasDeTrabajo[i].NombreArea</option>
                 }
             </select>
-            *@
+            
         </div>
     </div>
     <div class="row mb-3">

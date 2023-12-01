@@ -7,7 +7,7 @@ using Negocio.Contratos;
 namespace Vista.Pages.Administrativo
 {
    [BindProperties]
- //  [Authorize(Policy = "DebeSerAdmininstrativo")]
+   [Authorize(Policy = "DebeSerAdmininstrativo")]
     public class GestionarEmpleadosModel : PageModel
     {
         public List<Empleado>? Empleados { get; set; } = new List<Empleado>();
@@ -23,7 +23,7 @@ namespace Vista.Pages.Administrativo
         public void OnGet()
         {
             cargarMockupEmpleados();
-            //Empleados = _servicio.ObtenerEmpleados();
+            Empleados = _servicio.ObtenerEmpleados();
         }
 
 

@@ -9,7 +9,7 @@ using Vista.Pages.Login;
 namespace Vista.Pages.LiderDeProyecto
 {
     [BindProperties]
-   // [Authorize(Policy = "DebeSerLiderDeProyecto")]
+    [Authorize(Policy = "DebeSerLiderDeProyecto")]
     public class TimeLineModel : PageModel
     {
         private IAsignarTareasService _servicio;
@@ -41,9 +41,9 @@ namespace Vista.Pages.LiderDeProyecto
 
         public void OnGet()
         {
-          /*  Proyecto = _servicio.ObtenerProyectoActual(2);//IniciarSesionModel.EmpleadoId
+            Proyecto = _servicio.ObtenerProyectoActual(2);//IniciarSesionModel.EmpleadoId
             if (Proyecto != null)
-                CargarDatos();*/
+                CargarDatos();
         }
 
 

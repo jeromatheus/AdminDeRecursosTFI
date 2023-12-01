@@ -39,7 +39,7 @@
             </thead>
 
             <tbody id="myTBody">
-   @*            @foreach (var emp in Model.Empleados)
+           @foreach (var emp in Model.Empleados)
                 {
                     <tr onclick="obtenereEmpleadoSeleccionado(this)">
                         <td>@emp.Legajo</td>
@@ -48,7 +48,7 @@
                         <td>$@emp.Sueldo.Bruto</td>
                         <td>@emp.Puesto.Descripcion</td>
                     </tr>                    
-                }*@
+                }
             </tbody>
         </table>
     </div>
